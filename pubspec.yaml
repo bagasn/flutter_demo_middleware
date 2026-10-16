@@ -1,0 +1,57 @@
+name: demo_shelf
+description: "A new Flutter project."
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4
+  shelf_web_socket: ^3.0.0
+  web_socket_channel: ^3.0.3
+  get_it: ^9.3.0
+  logger: ^2.8.0
+  injectable: ^3.0.0
+  lorem_ipsum: ^0.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.16.1
+  flutter_gen_runner: ^5.15.0
+  injectable_generator: ^3.1.3
+  shelf_router_generator: ^1.1.5
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  generate: true
+  uses-material-design: true
+
+flutter_gen:
+  output: lib/generated/
+
+  integrations:
+    flutter_svg: true
+
+  fonts:
+    outputs:
+      class_name: AppFonts
+
+  colors:
+    inputs:
+      - assets/color/colors.xml
+    outputs:
+      class_name: AppColors
